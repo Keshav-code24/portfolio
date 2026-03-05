@@ -237,3 +237,11 @@ footer {
     border-radius: 10px;
     font-weight: bold;
 }
+.profile-pic{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:20px;
+border:4px solid cyan;
+}

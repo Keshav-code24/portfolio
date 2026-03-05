@@ -20,7 +20,16 @@
 <section class="hero">
     <h2>Aspiring Software Developer | DSA Enthusiast</h2>
     <p>I love solving Data Structures and Algorithms problems.</p>
+<img src="profile.jpg" alt="Keshav Raj" class="profile-pic">
+<section class="hero">
 
+<img src="profile.jpg" alt="Keshav Raj" class="profile-pic">
+
+<h1>Hi, I'm Keshav Raj</h1>
+
+<p>B.Tech CSE (Data Science) | Aspiring Software Developer</p>
+
+</section>
     <a href="about.html" class="btn">Explore More</a>
 </section>
 
@@ -154,18 +163,18 @@ let letter = "";
 (function type(){
   if(count === text.length){
     count = 0;
-  }
-  currentText = text[count];
-  letter = currentText.slice(0, ++index);
+}
+currentText = text[count];
+letter = currentText.slice(0, ++index);
 
-  document.querySelector(".typing").textContent = letter;
-  if(letter.length === currentText.length){
+document.querySelector(".typing").textContent = letter;
+if(letter.length === currentText.length){
     setTimeout(()=>{
-      index = 0;
-      count++;
+index = 0;
+count++;
     },1500);
-  }
-  setTimeout(type,100);
+}
+setTimeout(type,100);
 })();
 </script>
 
