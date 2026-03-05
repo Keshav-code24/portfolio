@@ -50,14 +50,55 @@
 
 <section class="hero">
     <h1>Hi, I'm Keshav Raj</h1>
+    <h2 class = "typing"></h2>
     <p>B.Tech CSE (Data Science) | Aspiring Software Developer</p>
     <button>Explore More</button>
 </section>
 
 
+<section id="about">
+    <h2>About Me</h2>
+
+    <p>
+        I am a B.Tech CSE (Data Science) student passionate about solving
+        real-world problems using Data Structures, Algorithms and Data Analytics.
+    </p>
+
+    <p>
+        I enjoy building projects, learning new technologies and improving my
+        problem solving skills through coding platforms like LeetCode.
+    </p>
+
+</section>
+
+
+<section class="projects">
+<h2>My Projects</h2>
+
+<div class="project-box">
+
+<div class="project">
+<h3>Yamuna River Analysis</h3>
+<p>Water area detection using satellite imagery.</p>
+</div>
+
+<div class="project">
+<h3>Delhi Water Area Project</h3>
+<p>Calculated water area using Google Earth Engine.</p>
+</div>
+
+<div class="project">
+<h3>NDVI Vegetation Analysis</h3>
+<p>Vegetation index calculation using satellite data.</p>
+</div>
+
+</div>
+</section>
+
 <section class="skills">
     <h2>My Skills</h2>
-    <div class="skill-box">
+
+    <div class="skills-box">
         <div class="skill">DSA</div>
         <div class="skill">C++</div>
         <div class="skill">HTML</div>
@@ -89,7 +130,7 @@
 
     <div class="project-card">
         <h3>DSA Practice</h3>
-        <p>Solved 200+ problems on LeetCode focusing on Data Structures and Algorithms.</p>
+        <p>Solved 150+ problems on LeetCode focusing on Data Structures and Algorithms.</p>
     </div>
 
     <div class="project-card">
@@ -99,13 +140,33 @@
 
 </section>
 
-<footer>
-    <p>© 2026 Keshav Raj | All Rights Reserved</p>
-</footer>
-
-    
 </footer>
 
 </body>
+
+<script>
+const text = ["Aspiring Software Developer", "DSA Enthusiast", "Data Science Student"];
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
+
+(function type(){
+  if(count === text.length){
+    count = 0;
+  }
+  currentText = text[count];
+  letter = currentText.slice(0, ++index);
+
+  document.querySelector(".typing").textContent = letter;
+  if(letter.length === currentText.length){
+    setTimeout(()=>{
+      index = 0;
+      count++;
+    },1500);
+  }
+  setTimeout(type,100);
+})();
+</script>
 
 

@@ -10,3 +10,15 @@ a {
     color: cyan;
     text-decoration: none;
 }
+body{
+text-align:center;
+padding:40px;
+}
+
+h2{
+color:cyan;
+}
+
+p{
+font-size:18px;
+}
